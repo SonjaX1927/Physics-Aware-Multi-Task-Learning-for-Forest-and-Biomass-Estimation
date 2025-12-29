@@ -1,0 +1,9 @@
+# Binary / raster / table outputs
+*.npy
+*.tif
+*.xml
+*.asc
+*.csv
+
+# Preprocessing cache
+@data-preprocessing/__pycache__/

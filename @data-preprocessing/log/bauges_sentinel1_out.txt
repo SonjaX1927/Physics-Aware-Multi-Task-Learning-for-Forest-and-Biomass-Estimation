@@ -1,0 +1,8 @@
+Logging to @data-preprocessing/bauges_sentinel1_out.txt
+Running SNAP gpt command: /Applications/esa-snap/bin/gpt /Volumes/siyux1927/thesis/data/I-MAESTRO_data/@data-preprocessing/S1_GRD_SIGMA0_TC.xml -Pinput=/Volumes/siyux1927/thesis/data/I-MAESTRO_data/@data/imaestro/bauges/raw/S1A_IW_GRDH_1SDV_20191001T054348_20191001T054413_029261_03531C_5C1C.SAFE -Poutput=/Volumes/siyux1927/thesis/data/I-MAESTRO_data/@data/imaestro/bauges/tmp/bauges_sigma0_tc.tif -PgeoRegion=POLYGON((5.915601998244789 45.48061332602664, 6.409554484339562 45.46668684765636, 6.434917169792097 45.87669585618319, 5.93729764523108 45.89072633655415, 5.915601998244789 45.48061332602664))
+
+✅ SNAP preprocessing finished: /Volumes/siyux1927/thesis/data/I-MAESTRO_data/@data/imaestro/bauges/tmp/bauges_sigma0_tc.tif
+
+✅ VV backscatter (dB) written: /Volumes/siyux1927/thesis/data/I-MAESTRO_data/@data/imaestro/bauges/output_backscatter/bauges_vv.tif
+
+✅ VH backscatter (dB) written: /Volumes/siyux1927/thesis/data/I-MAESTRO_data/@data/imaestro/bauges/output_backscatter/bauges_vh.tif

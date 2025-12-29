@@ -1,0 +1,15 @@
+Logging to @data-preprocessing/milicz_imaestro_out.txt
+✅@data/imaestro/milicz/raw/milicz_trees.csv and @data/imaestro/milicz/raw/milicz_cellID25.asc reading done
+total trees: (4582739, 5)
+total cells: (826, 963)
+first 3 rows of trees_df:
+   cellID25                sp  n    dbh      h
+0     59690  Carpinus betulus  1  10.17  11.87
+1     59690  Carpinus betulus  1  10.39  12.09
+2     59690  Carpinus betulus  1  10.50  12.20
+
+✅ Smoothed continuous TIFF written: @data/imaestro/milicz/output_tiff/milicz_biomass_t_ha_smooth.tif
+
+✅ Smoothed continuous TIFF written: @data/imaestro/milicz/output_tiff/milicz_height95_smooth.tif
+
+✅ Smoothed categorical TIFF written: @data/imaestro/milicz/output_tiff/milicz_dom_genus_smooth.tif

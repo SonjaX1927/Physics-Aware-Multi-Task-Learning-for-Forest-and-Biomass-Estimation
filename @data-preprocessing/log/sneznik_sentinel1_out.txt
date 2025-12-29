@@ -1,0 +1,8 @@
+Logging to @data-preprocessing/sneznik_sentinel1_out.txt
+Running SNAP gpt command: /Applications/esa-snap/bin/gpt /Volumes/siyux1927/thesis/data/I-MAESTRO_data/@data-preprocessing/S1_GRD_SIGMA0_TC.xml -Pinput=/Volumes/siyux1927/thesis/data/I-MAESTRO_data/@data/imaestro/sneznik/raw/S1A_IW_GRDH_1SDV_20191005T051052_20191005T051117_029319_035512_E763.SAFE -Poutput=/Volumes/siyux1927/thesis/data/I-MAESTRO_data/@data/imaestro/sneznik/tmp/sneznik_sigma0_tc.tif -PgeoRegion=POLYGON((14.405839253012585 45.574736603572696, 14.546776726826423 45.575380323442424, 14.545909374797667 45.68335681564225, 14.404701058200269 45.68271068705809, 14.405839253012585 45.574736603572696))
+
+✅ SNAP preprocessing finished: /Volumes/siyux1927/thesis/data/I-MAESTRO_data/@data/imaestro/sneznik/tmp/sneznik_sigma0_tc.tif
+
+✅ VV backscatter (dB) written: /Volumes/siyux1927/thesis/data/I-MAESTRO_data/@data/imaestro/sneznik/output_backscatter/sneznik_vv.tif
+
+✅ VH backscatter (dB) written: /Volumes/siyux1927/thesis/data/I-MAESTRO_data/@data/imaestro/sneznik/output_backscatter/sneznik_vh.tif

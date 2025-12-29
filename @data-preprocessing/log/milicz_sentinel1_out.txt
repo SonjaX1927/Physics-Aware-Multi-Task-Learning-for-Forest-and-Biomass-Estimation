@@ -1,0 +1,8 @@
+Logging to @data-preprocessing/milicz_sentinel1_out.txt
+Running SNAP gpt command: /Applications/esa-snap/bin/gpt /Volumes/siyux1927/thesis/data/I-MAESTRO_data/@data-preprocessing/S1_GRD_SIGMA0_TC.xml -Pinput=/Volumes/siyux1927/thesis/data/I-MAESTRO_data/@data/imaestro/milicz/raw/S1A_IW_GRDH_1SDV_20191005T050912_20191005T050937_029319_035512_0085.SAFE -Poutput=/Volumes/siyux1927/thesis/data/I-MAESTRO_data/@data/imaestro/milicz/tmp/milicz_sigma0_tc.tif -PgeoRegion=POLYGON((17.08767308501018 51.368886984912706, 17.43348369304809 51.374021910077616, 17.427111605960395 51.55968811922609, 17.07989626326407 51.5545191579358, 17.08767308501018 51.368886984912706))
+
+✅ SNAP preprocessing finished: /Volumes/siyux1927/thesis/data/I-MAESTRO_data/@data/imaestro/milicz/tmp/milicz_sigma0_tc.tif
+
+✅ VV backscatter (dB) written: /Volumes/siyux1927/thesis/data/I-MAESTRO_data/@data/imaestro/milicz/output_backscatter/milicz_vv.tif
+
+✅ VH backscatter (dB) written: /Volumes/siyux1927/thesis/data/I-MAESTRO_data/@data/imaestro/milicz/output_backscatter/milicz_vh.tif

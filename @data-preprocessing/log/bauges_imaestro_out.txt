@@ -1,0 +1,65 @@
+Logging to @data-preprocessing/bauges_imaestro_out.txt
+✅@data/imaestro/bauges/raw/bauges_trees.csv and @data/imaestro/bauges/raw/bauges_cellID25.asc reading done
+total trees: (10471341, 5)
+total cells: (1823, 1545)
+first 3 rows of trees_df:
+   cellID25               sp  n    dbh      h
+0     12993  Fagus sylvatica  6   7.86   8.80
+1     12993  Fagus sylvatica  6  10.37  11.03
+2     12993  Fagus sylvatica  6  15.08  14.38
+✅Biomass calculated and added to table.
+   cellID25               sp  n    dbh      h    biomass
+0     12993  Fagus sylvatica  6   7.86   8.80   9.104263
+1     12993  Fagus sylvatica  6  10.37  11.03  18.202678
+2     12993  Fagus sylvatica  6  15.08  14.38  46.418570
+✅Statistics for trees data:
+           cellID25             n           dbh             h       biomass
+count  1.047134e+07  1.047134e+07  1.047134e+07  1.047134e+07  1.047134e+07
+mean   1.374717e+06  3.355347e+00  2.681525e+01  1.813045e+01  1.974676e+02
+std    5.433382e+05  2.504645e+00  1.500266e+01  6.275493e+00  2.790386e+02
+min    1.299300e+04  1.000000e+00  7.640000e+00  4.560000e+00  3.194146e+00
+25%    9.696110e+05  1.000000e+00  1.409000e+01  1.280000e+01  3.001503e+01
+50%    1.355686e+06  3.000000e+00  2.389000e+01  1.772000e+01  1.048179e+02
+75%    1.797631e+06  5.000000e+00  3.677000e+01  2.301000e+01  2.555475e+02
+max    2.784461e+06  1.080000e+02  1.330700e+02  4.550000e+01  6.360961e+03
+
+✅ABA species statistics saved to @data/imaestro/bauges/aba_species_statistics.csv
+cellID25             12993            12994            12995          14537                14538
+dom_spe    Fagus sylvatica  Quercus petraea  Populus tremula  Tilia cordata  Acer pseudoplatanus
+dom_genus            Fagus          Quercus          Populus          Tilia                 Acer
+n_trees                 20               17                8             11                   26
+
+✅ABA height percentile/min/max/mean statistics saved to @data/imaestro/bauges/aba_height_statistics.csv
+                        0             1             2             3             4
+cellID25     12993.000000  12994.000000  12995.000000  14537.000000  14538.000000
+height_min       8.800000      8.500000      8.720000      7.490000      8.950000
+height_mean     15.953494     12.927976     12.643333     12.997966     14.384615
+height_max      20.010000     18.410000     18.880000     18.150000     19.730000
+height95        19.930000     15.680000     15.590000     16.800000     18.860000
+height99        20.010000     18.410000     18.880000     18.150000     19.730000
+
+✅cell_df saved to @data/imaestro/bauges/bauges_cells.csv
+   cellID25  biomass_t_ha  height95 dom_genus
+0     12993       117.527     19.93     Fagus
+1     12994        79.061     15.68   Quercus
+2     12995        23.056     15.59   Populus
+3     14537        97.371     16.80     Tilia
+4     14538       129.289     18.86      Acer
+
+✅ biomass_t_ha filled into .asc map
+
+✅ Data written to TIFF successfully at @data/imaestro/bauges/output_tiff/bauges_biomass_t_ha.tif.
+
+✅ height95 filled into .asc map
+
+✅ Data written to TIFF successfully at @data/imaestro/bauges/output_tiff/bauges_height95.tif.
+
+✅ dom_genus_mapped filled into .asc map
+
+✅ Data written to TIFF successfully at @data/imaestro/bauges/output_tiff/bauges_dom_genus.tif.
+
+✅ Smoothed continuous TIFF written: @data/imaestro/bauges/output_tiff/bauges_biomass_t_ha_smooth.tif
+
+✅ Smoothed continuous TIFF written: @data/imaestro/bauges/output_tiff/bauges_height95_smooth.tif
+
+✅ Smoothed categorical TIFF written: @data/imaestro/bauges/output_tiff/bauges_dom_genus_smooth.tif

@@ -1,0 +1,65 @@
+Logging to @data-preprocessing/sneznik_imaestro_out.txt
+✅@data/imaestro/sneznik/raw/sneznik_trees.csv and @data/imaestro/sneznik/raw/sneznik_cellID25.asc reading done
+total trees: (823674, 5)
+total cells: (480, 440)
+first 3 rows of trees_df:
+   cellID25               sp  n    dbh      h
+0      1926       Abies alba  1  52.56  30.43
+1      1926  Fagus sylvatica  4  21.82  19.15
+2      1926  Fagus sylvatica  4  23.72  20.19
+✅Biomass calculated and added to table.
+   cellID25               sp  n    dbh      h     biomass
+0      1926       Abies alba  1  52.56  30.43  396.515082
+1      1926  Fagus sylvatica  4  21.82  19.15  116.902897
+2      1926  Fagus sylvatica  4  23.72  20.19  144.037349
+✅Statistics for trees data:
+            cellID25              n            dbh              h        biomass
+count  823674.000000  823674.000000  823674.000000  823674.000000  823674.000000
+mean   113093.037874       1.861263      38.096861      24.420397     385.584511
+std     46012.365867       1.042617      18.074200       7.742640     411.348703
+min      1926.000000       1.000000      10.000000       6.200000       6.260677
+25%     78502.000000       1.000000      23.320000      18.670000      80.074301
+50%    119832.000000       2.000000      37.470000      25.500000     259.624033
+75%    145879.000000       3.000000      50.160000      30.120000     539.589498
+max    202701.000000      17.000000     129.660000      47.530000   10062.443383
+
+✅ABA species statistics saved to @data/imaestro/sneznik/aba_species_statistics.csv
+cellID25              1926        1936             2365             2366          2367
+dom_spe    Fagus sylvatica  Abies alba  Fagus sylvatica  Fagus sylvatica  Ulmus glabra
+dom_genus            Fagus       Abies            Fagus            Fagus         Ulmus
+n_trees                  8           9               17                8             4
+
+✅ABA height percentile/min/max/mean statistics saved to @data/imaestro/sneznik/aba_height_statistics.csv
+                     0            1            2            3            4
+cellID25     1926.0000  1936.000000  2365.000000  2366.000000  2367.000000
+height_min     19.1500    16.050000    10.460000    20.130000    11.350000
+height_mean    22.0045    25.013077    19.639259    23.405625    18.235714
+height_max     30.4300    32.110000    31.140000    31.130000    32.060000
+height95       26.5800    32.110000    30.580000    31.130000    32.060000
+height99       30.4300    32.110000    31.140000    31.130000    32.060000
+
+✅cell_df saved to @data/imaestro/sneznik/sneznik_cells.csv
+   cellID25  biomass_t_ha  height95 dom_genus
+0      1926        65.462     26.58     Fagus
+1      1936        65.464     32.11     Abies
+2      2365        95.413     30.58     Fagus
+3      2366        69.920     31.13     Fagus
+4      2367        28.037     32.06     Ulmus
+
+✅ biomass_t_ha filled into .asc map
+
+✅ Data written to TIFF successfully at @data/imaestro/sneznik/output_tiff/sneznik_biomass_t_ha.tif.
+
+✅ height95 filled into .asc map
+
+✅ Data written to TIFF successfully at @data/imaestro/sneznik/output_tiff/sneznik_height95.tif.
+
+✅ dom_genus_mapped filled into .asc map
+
+✅ Data written to TIFF successfully at @data/imaestro/sneznik/output_tiff/sneznik_dom_genus.tif.
+
+✅ Smoothed continuous TIFF written: @data/imaestro/sneznik/output_tiff/sneznik_biomass_t_ha_smooth.tif
+
+✅ Smoothed continuous TIFF written: @data/imaestro/sneznik/output_tiff/sneznik_height95_smooth.tif
+
+✅ Smoothed categorical TIFF written: @data/imaestro/sneznik/output_tiff/sneznik_dom_genus_smooth.tif
