@@ -4,6 +4,7 @@
 *.xml
 *.asc
 *.csv
+*.geojson
 
 # Preprocessing cache
 @data-preprocessing/__pycache__/
