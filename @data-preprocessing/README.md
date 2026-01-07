@@ -48,7 +48,10 @@ Biomass (kg) = a × DBH^b × wood_density
 - Majority filter for categorical data (genus)
 - Only valid pixels modified, preserving forest mask
 
-![Biomass and Height Distributions](../@plots/data-insight/biomass_hist_per_genus_across_sites.png)
+<div style="display: flex; gap: 10px; justify-content: space-between;">
+<img src="../@plots/data-insight/biomass_hist_per_genus_across_sites.png" width="49%" />
+<img src="../@plots/data-insight/height_hist_per_genus_across_sites.png" width="49%" />
+</div>
 *Distribution of biomass (left) and height (right) by genus. Fagus and Abies dominate with distinct structural characteristics.*
 
 ### Stage 2: Sentinel-1 SAR Processing
@@ -80,10 +83,12 @@ Biomass (kg) = a × DBH^b × wood_density
 - Entire blocks assigned to train/val/test splits
 - Ensures geographic separation between splits
 
-![Spatial Blocks](../@plots/data-insight/bauges_blocks.png)
-![Spatial Blocks](../@plots/data-insight/milicz_blocks.png)
-![Spatial Blocks](../@plots/data-insight/sneznik_blocks.png)
-*Spatial distribution of train (purple), validation (blue), and test (yellow) blocks across the three sites.*
+<div style="display: flex; gap: 10px; justify-content: space-between;">
+<img src="../@plots/data-insight/bauges_blocks.png" width="32%" />
+<img src="../@plots/data-insight/milicz_blocks.png" width="32%" />
+<img src="../@plots/data-insight/sneznik_blocks.png" width="32%" />
+</div>
+*Spatial distribution of train (purple), validation (blue), and test (green) blocks across the three sites.*
 
 **Patch extraction:**
 - Patch size: 64×64 pixels (1.6×1.6 km)
@@ -95,19 +100,19 @@ Biomass (kg) = a × DBH^b × wood_density
 - Validation: 145 patches (15%)
 - Test: 109 patches (10%)
 
-![Sample Patches](../@plots/data-insight/sample_patches.png)
+<img class="center" src="../@plots/data-insight/sample_patches.png" width="70%" />
 *Example patches showing all five channels across train/val/test splits. SAR channels display speckle patterns, while structural layers show spatial clustering.*
 
 ## Data Distribution Analysis
 
 ### Genus Balance
 
-![Genus Distribution](../@plots/data-insight/genus_split_distribution_patch_level.png)
+<img class="center" src="../@plots/data-insight/genus_split_distribution_patch_level.png" width="70%" />
 *Patch counts by dominant genus across splits. Fagus (beech) most abundant with 300+ training patches, followed by Abies and Pinus.*
 
 ### Target Variable Distributions
 
-![Height and Biomass Histograms](../@plots/data-insight/height_biomass_hist_split.png)
+<img class="center" src="../@plots/data-insight/height_biomass_hist_split.png" width="60%" />
 *Pixel-level distributions show right-skewed patterns typical of forest data. Biomass ranges 0-400 t/ha, height 10-45m. Similar distributions across splits confirm balanced splitting.*
 
 ## Output Files
