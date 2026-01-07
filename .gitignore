@@ -5,6 +5,7 @@
 *.asc
 *.csv
 *.geojson
+*.pdf
 
 # Preprocessing cache
 @data-preprocessing/__pycache__/
