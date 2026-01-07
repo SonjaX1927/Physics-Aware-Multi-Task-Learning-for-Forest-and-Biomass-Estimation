@@ -6,6 +6,8 @@
 *.csv
 *.geojson
 *.pdf
+experimental_results.md
+data_preprocessing_methodology.md
 
 # Preprocessing cache
 @data-preprocessing/__pycache__/

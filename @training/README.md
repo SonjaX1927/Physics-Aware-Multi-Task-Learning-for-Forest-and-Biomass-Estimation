@@ -106,29 +106,42 @@ L_reg = sqrt(1/M Σ (ŷ - y)²)  # Only finite values
 
 ### Baseline Model Results
 
-![Baseline Height Predictions](../@plots/training-results/baseline-unet/baseline-height-scatter-plot.png)
-*Height scatter plot shows systematic underestimation for tall forests (>30m) and overestimation for short forests (<20m). Model predictions cluster around dataset mean, reflecting limited C-band SAR sensitivity to height variations.*
+<div style="display: flex; gap: 10px; justify-content: space-between;">
+<div style="flex: 1;">
+<img src="../@plots/training-results/baseline-unet/baseline-height-scatter-plot.png" width="80%" />
+<p style="text-align: center; font-style: italic; margin-top: 5px;">Height scatter plot shows systematic underestimation for tall forests (>30m) and overestimation for short forests (<20m). Model predictions cluster around dataset mean, reflecting limited C-band SAR sensitivity to height variations.</p>
+</div>
+<div style="flex: 1;">
+<img src="../@plots/training-results/baseline-unet/baseline-biomass-scatter-plot.png" width="80%" />
+<p style="text-align: center; font-style: italic; margin-top: 5px;">Biomass predictions exhibit severe saturation - model outputs confined to 50-120 t/ha regardless of true values (0-400 t/ha). Horizontal banding pattern characteristic of SAR signal saturation beyond ~100 t/ha threshold.</p>
+</div>
+</div>
 
-![Baseline Biomass Predictions](../@plots/training-results/baseline-unet/baseline-biomass-scatter-plot.png)
-*Biomass predictions exhibit severe saturation - model outputs confined to 50-120 t/ha regardless of true values (0-400 t/ha). Horizontal banding pattern characteristic of SAR signal saturation beyond ~100 t/ha threshold.*
-
-![Baseline Sample Predictions](../@plots/training-results/baseline-unet/baseline-all-tasks-samples.png)
-*Example predictions on test samples. Segmentation captures broad patterns but misses fine boundaries. Biomass shows reduced dynamic range. Height preserves spatial structure but underestimates peaks.*
+<div style="text-align: center;">
+<img src="../@plots/training-results/baseline-unet/baseline-all-tasks-samples.png" width="60%" />
+<p style="text-align: center; font-style: italic; margin-top: 5px;">Example predictions on test samples. Segmentation captures broad patterns but misses fine boundaries. Biomass shows reduced dynamic range. Height preserves spatial structure but underestimates peaks.</p>
+</div>
 
 ### Multi-Task Model Results
 
-![MTL Height-Biomass Predictions](../@plots/training-results/mtl/height-biomass-scatter-plot.png)
-*Multi-task predictions show similar patterns to baseline. Height (left) maintains clustering around mean. Biomass (right) still saturates, though slightly improved R² suggests more consistent predictions within observable range.*
+<div style="text-align: center;">
+<img src="../@plots/training-results/mtl/height-biomass-scatter-plot.png" width="60%" />
+<p style="text-align: center; font-style: italic; margin-top: 5px;">Multi-task predictions show similar patterns to baseline. Height (left) maintains clustering around mean. Biomass (right) still saturates, though slightly improved R² suggests more consistent predictions within observable range.</p>
+</div>
 
-![MTL Sample Predictions](../@plots/training-results/mtl/mtl-all-tasks-samples.png)
-*Multi-task predictions maintain comparable quality to baselines. Height appears slightly smoother (regularization from shared encoder). Biomass shows marginally improved spatial coherence in transition zones, consistent with allometric constraint.*
+<div style="text-align: center;">
+<img src="../@plots/training-results/mtl/mtl-all-tasks-samples.png" width="60%" />
+<p style="text-align: center; font-style: italic; margin-top: 5px;">Multi-task predictions maintain comparable quality to baselines. Height appears slightly smoother (regularization from shared encoder). Biomass shows marginally improved spatial coherence in transition zones, consistent with allometric constraint.</p>
+</div>
 
 ## Multi-Task Learning Analysis
 
 ### Gradient Alignment
 
-![Gradient Comparison](../@plots/training-results/mtl/gradient-comparison.png)
-*Cosine similarity between task-specific gradients in shared encoder across training epochs.*
+<div style="text-align: center;">
+<img src="../@plots/training-results/mtl/gradient-comparison.png" width="50%" />
+<p style="text-align: center; font-style: italic; margin-top: 5px;">Cosine similarity between task-specific gradients in shared encoder across training epochs.</p>
+</div>
 
 **Findings:**
 - **Height-biomass pair** shows strongest alignment (0.4-0.9), validating allometric coupling
