@@ -108,11 +108,11 @@ L_reg = sqrt(1/M Σ (ŷ - y)²)  # Only finite values
 
 <div style="display: flex; gap: 10px; justify-content: space-between;">
 <div style="flex: 1;">
-<img src="../@plots/training-results/baseline-unet/baseline-height-scatter-plot.png" width="80%" />
+<img src="../@plots/training-results/baseline-unet/baseline-height-scatter-plot.png" width="40%" />
 <p style="text-align: center; font-style: italic; margin-top: 5px;">Height scatter plot shows systematic underestimation for tall forests (>30m) and overestimation for short forests (<20m). Model predictions cluster around dataset mean, reflecting limited C-band SAR sensitivity to height variations.</p>
 </div>
 <div style="flex: 1;">
-<img src="../@plots/training-results/baseline-unet/baseline-biomass-scatter-plot.png" width="80%" />
+<img src="../@plots/training-results/baseline-unet/baseline-biomass-scatter-plot.png" width="40%" />
 <p style="text-align: center; font-style: italic; margin-top: 5px;">Biomass predictions exhibit severe saturation - model outputs confined to 50-120 t/ha regardless of true values (0-400 t/ha). Horizontal banding pattern characteristic of SAR signal saturation beyond ~100 t/ha threshold.</p>
 </div>
 </div>
