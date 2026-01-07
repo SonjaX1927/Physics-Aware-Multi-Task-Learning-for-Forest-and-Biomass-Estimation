@@ -106,18 +106,12 @@ L_reg = sqrt(1/M Σ (ŷ - y)²)  # Only finite values
 
 ### Baseline Model Results
 
-<div style="display: flex; gap: 10px; justify-content: space-between;">
-<div style="flex: 1;">
-<img src="../@plots/training-results/baseline-unet/baseline-height-scatter-plot.png" width="40%" />
-<p style="text-align: center; font-style: italic; margin-top: 5px;">Height scatter plot shows systematic underestimation for tall forests (>30m) and overestimation for short forests (<20m). Model predictions cluster around dataset mean, reflecting limited C-band SAR sensitivity to height variations.</p>
-</div>
-<div style="flex: 1;">
-<img src="../@plots/training-results/baseline-unet/baseline-biomass-scatter-plot.png" width="40%" />
-<p style="text-align: center; font-style: italic; margin-top: 5px;">Biomass predictions exhibit severe saturation - model outputs confined to 50-120 t/ha regardless of true values (0-400 t/ha). Horizontal banding pattern characteristic of SAR signal saturation beyond ~100 t/ha threshold.</p>
-</div>
+<div style="text-align: center;">
+<img src="../@plots/training-results/baseline-unet/baseline-height-scatter-plot.png" width="49%" />
+<img src="../@plots/training-results/baseline-unet/baseline-biomass-scatter-plot.png" width="49%" />
+<p style="text-align: center; font-style: italic; margin-top: 5px;">Height scatter plot (left) shows systematic underestimation for tall forests (>30m) and overestimation for short forests (<20m), with predictions clustering around dataset mean. Biomass predictions (right) exhibit severe saturation - model outputs confined to 50-120 t/ha regardless of true values (0-400 t/ha), characteristic of C-band SAR signal saturation beyond ~100 t/ha threshold.</p>
 </div>
 
-<div style="text-align: center;">
 <img src="../@plots/training-results/baseline-unet/baseline-all-tasks-samples.png" width="60%" />
 <p style="text-align: center; font-style: italic; margin-top: 5px;">Example predictions on test samples. Segmentation captures broad patterns but misses fine boundaries. Biomass shows reduced dynamic range. Height preserves spatial structure but underestimates peaks.</p>
 </div>
